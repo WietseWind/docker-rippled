@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker ps -a|grep rippled|cut -d " " -f 1 |xargs -I___ echo "echo 'Stopping container ___' && docker stop ___" | bash
-docker ps -a|grep rippled|cut -d " " -f 1 |xargs -I___ echo "echo 'Removing container ___' && docker rm ___" | bash
+docker ps -a|grep rippled:latest|cut -d " " -f 1 |xargs -I___ echo "echo 'Stopping container ___' && docker stop ___" | bash
+docker ps -a|grep rippled:latest|cut -d " " -f 1 |xargs -I___ echo "echo 'Removing container ___' && docker rm ___" | bash
