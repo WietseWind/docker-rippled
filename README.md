@@ -1,11 +1,11 @@
 # Rippled (node)
 
-This container allows you to run a `rippled` node. No config required. 
+This container allows you to run a `rippled` node. No config required.
 
 The server will keep a history of **only 256 ledgers**. You can change this value in the config (more about te config in this readme).
 
 The container is configured to serve a public http websocket at port `80` and the local _rpc admin service_ in the container at port `5005`.
-Other ports (443, 6006, 51235) can be mapped but should be enabled in the config first. 
+Other ports (443, 6006, 51235) can be mapped but should be enabled in the config first.
 
 This container is running on `ubuntu:latest`.
 
@@ -42,7 +42,7 @@ Use the image `xrptipbot/rippled`.
 
 **Because you only retrieved the container image from the Docker Hub, you have to manually create a container based on the image.** When creating the container, please make sure you open port `80`.
 
-If you run the container with a mapping to `/config/` (in the container) containing a `rippled.cfg` and `validators.txt` file, these will be used. If the mapping or these files aren't present, `rippled` will start with the default config. 
+If you run the container with a mapping to `/config/` (in the container) containing a `rippled.cfg` and `validators.txt` file, these will be used. If the mapping or these files aren't present, `rippled` will start with the default config.
 
 This command launches your `rippled` container and the rippled websocket at port `80`:
 
@@ -71,6 +71,10 @@ If you want to check the rippled server status:
 ```
 docker exec rippled server_info
 ```
+
+Check the value of `complete_ledgers` in the server info to see if the server
+has complete ledgers with transactions. When you launch the container it may take
+a few minutes for the server to sync.
 
 If you started the container manually, you may have to change the name of the container (`rippled`) to the name you entered in your `docker run` command.
 
