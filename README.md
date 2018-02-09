@@ -73,3 +73,7 @@ docker exec rippled server_info
 ```
 
 If you started the container manually, you may have to change the name of the container (`rippled`) to the name you entered in your `docker run` command.
+
+## Connecting
+
+You can now connect to the `rippled` websocket using a client like [ripple-lib](https://github.com/ripple/ripple-lib/tree/master).
