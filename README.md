@@ -81,3 +81,16 @@ If you started the container manually, you may have to change the name of the co
 ## Connecting
 
 You can now connect to the `rippled` websocket using a client like [ripple-lib](https://github.com/ripple/ripple-lib/tree/master).
+
+# Updating
+
+- **2017-02-21** rippled 0.90.0 [is released](https://ripple.com/dev-blog/rippled-version-0-90-0/
+
+## Update process
+
+1. Stop the container: `docker stop rippled` (if you named (`--name`) the container `rippled`)
+2. Remove the container: `docker rm rippled`
+3. Remove the image: `docker rmi xrptipbot/rippled:latest` (or if you built the container image based on the [Github repo](https://github.com/WietseWind/docker-rippled): use the image name you specified when building)
+4. Re-create the container; if you used Git: `git pull` and `go/build` - if you used the Docker Hub: just use the command from this Readme (_From the Docker Hub_), a new version of the image will be downloaded.
+
+**USE THE PATHS YOU SPECIFIED (`-v` argument) WHEN RECREATING THE CONTAINER IF YOU WANT TO KEEP YOUR CONFIG AND/OR DATA!**
