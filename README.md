@@ -85,6 +85,7 @@ You can now connect to the `rippled` websocket using a client like [ripple-lib](
 # Updating
 
 - **2017-02-21** rippled 0.90.0 [is released](https://ripple.com/dev-blog/rippled-version-0-90-0/)
+- **2017-03-23** rippled 0.90.1 [is released](https://ripple.com/dev-blog/rippled-version-0-90-1/)
 
 ## Update process
 
