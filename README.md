@@ -2,7 +2,7 @@
 
 This container allows you to run a `rippled` node. No config required.
 
-The server will keep a history of **only 256 ledgers**. You can change this value in the config (more about te config in this readme).
+The server will keep a history of **only 256 ledgers**. You can change this value in the config (more about the config in this readme).
 
 The container is configured to serve a public http websocket at port `80` and the local _rpc admin service_ in the container at port `5005`.
 Other ports (443, 6006, 51235) can be mapped but should be enabled in the config first.
