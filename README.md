@@ -91,8 +91,8 @@ You can now connect to the `rippled` websocket using a client like [ripple-lib](
 - **2018-09-15** rippled 1.1.0 [is released](https://github.com/ripple/rippled/releases/tag/1.1.0)
 - **2018-10-23** rippled 1.1.1 [is released](https://ripple.com/dev-blog/rippled-version-1-1-1/)
 - **2018-12-12** rippled 1.1.2 [is released](https://ripple.com/dev-blog/introducing-xrp-ledger-rippled-version-1-1-2/)
-- **2018-02-14** rippled 1.2.0 [is released](https://github.com/ripple/rippled/releases/tag/1.2.0)
-- **2018-02-27** rippled 1.2.1 [is released](https://github.com/ripple/rippled/releases/tag/1.2.1)
+- **2019-02-14** rippled 1.2.0 [is released](https://github.com/ripple/rippled/releases/tag/1.2.0)
+- **2019-02-27** rippled 1.2.1 [is released](https://github.com/ripple/rippled/releases/tag/1.2.1)
 
 ## Update process
 
