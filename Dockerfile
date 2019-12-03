@@ -9,7 +9,7 @@ COPY entrypoint /entrypoint.sh
 RUN apt-get update -y && \
     apt-get install ssh openssl nano -y && \
     cd /tmp && \
-    wget https://repos.ripple.com/repos/rippled-deb/pool/stable/rippled_1.3.1-1_amd64.deb && \
+    wget https://repos.ripple.com/repos/rippled-deb/pool/stable/rippled_1.4.0-1_amd64.deb && \
     dpkg -i rippled_1.3.1-1_amd64.deb && \
     rm -rf /var/lib/apt/lists/* && \
     export PATH=$PATH:/opt/ripple/bin/ && \
