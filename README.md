@@ -38,7 +38,7 @@ docker build --tag rippled:latest .
 
 ### From the Docker Hub
 
-Use the image `xrptipbot/rippled`.
+Use the image `xrpllabsofficial/xrpld`.
 
 **Because you only retrieved the container image from the Docker Hub, you have to manually create a container based on the image.** When creating the container, please make sure you open port `80`.
 
@@ -50,11 +50,11 @@ This command launches your `rippled` container and the rippled websocket at port
 docker run -dit \
     --name rippled \
     -p 80:80 \
-    -v /My/Local/Disk/RippledConfig/:/config/ \
-    xrptipbot/rippled:latest
+    -v /my/local/disk/xrpld-config/:/config/ \
+    xrpllabsofficial/xrpld:latest
 ```
 
-You can change the `--name` and **make sure you specify a valid local full path for your volume source, instead of `/My/Local/Disk/RippledConfig/`**.
+You can change the `--name` and **make sure you specify a valid local full path for your volume source, instead of `/my/local/disk/xrpld-config/`**.
 
 You can fetch a working sample config from the [Github repo](https://github.com/WietseWind/docker-rippled).
 
@@ -107,7 +107,7 @@ You can now connect to the `rippled` websocket using a client like [ripple-lib](
 
 1. Stop the container: `docker stop rippled` (if you named (`--name`) the container `rippled`)
 2. Remove the container: `docker rm rippled`
-3. Remove the image: `docker rmi xrptipbot/rippled:latest` (or if you built the container image based on the [Github repo](https://github.com/WietseWind/docker-rippled): use the image name you specified when building)
+3. Remove the image: `docker rmi xrpllabsofficial/xrpld:latest` (or if you built the container image based on the [Github repo](https://github.com/WietseWind/docker-rippled): use the image name you specified when building)
 4. Re-create the container; if you used Git: `git pull` and `go/build` - if you used the Docker Hub: just use the command from this Readme (_From the Docker Hub_), a new version of the image will be downloaded.
 
 **USE THE PATHS YOU SPECIFIED (`-v` argument) WHEN RECREATING THE CONTAINER IF YOU WANT TO KEEP YOUR CONFIG AND/OR DATA!**
