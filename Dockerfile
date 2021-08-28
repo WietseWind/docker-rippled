@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-LABEL maintainer="mail@wietse.com"
+LABEL maintainer="w@xrpl-labs.com"
 
 RUN export LANGUAGE=C.UTF-8; export LANG=C.UTF-8; export LC_ALL=C.UTF-8; export DEBIAN_FRONTEND=noninteractive
 

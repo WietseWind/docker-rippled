@@ -17,9 +17,9 @@ fi
 
 docker run \
     -dit \
-    --name rippled \
+    --name xrpld \
     -p $PORT:80 \
     -v $(self)/../config:/config/ \
-    rippled:latest
+    xrpllabsofficial/xrpld:latest
 
-docker logs -f rippled
+docker logs -f xrpld
