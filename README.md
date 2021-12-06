@@ -112,3 +112,13 @@ You can now connect to the `rippled` websocket using a client like [ripple-lib](
 4. Re-create the container; if you used Git: `git pull` and `go/build` - if you used the Docker Hub: just use the command from this Readme (_From the Docker Hub_), a new version of the image will be downloaded.
 
 **USE THE PATHS YOU SPECIFIED (`-v` argument) WHEN RECREATING THE CONTAINER IF YOU WANT TO KEEP YOUR CONFIG AND/OR DATA!**
+
+## Building & publishing to Docker Hub:
+
+```
+version=1.8.1 # sample
+docker build --tag xrpllabsofficial/xrpld:$version .
+docker push xrpllabsofficial/xrpld:$version
+docker tag xrpllabsofficial/xrpld:$version xrpllabsofficial/xrpld:latest
+docker push xrpllabsofficial/xrpld:latest
+```
