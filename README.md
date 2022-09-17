@@ -106,7 +106,8 @@ You can now connect to the `rippled` websocket using a client like [ripple-lib](
 - **2022-01-14** rippled 1.8.4 [is released](https://xrpl.org/blog/2022/rippled-1.8.4.html)
 - **2022-02-08** rippled 1.8.5 [is released](https://xrpl.org/blog/2022/rippled-1.8.5.html)
 - **2022-04-07** rippled 1.9.0 [is released](https://xrpl.org/blog/2022/rippled-1.9.0.html)
-- **2022-05-23** rippled 1.9.1 [is released](https://xrpl.org/blog/2022/rippled-1.9.1.html)
+- **2022** rippled 1.9.2 [is released](https://xrpl.org/blog/2022/rippled-1.9.2.html)
+- **2022** rippled 1.9.3 [is released](https://xrpl.org/blog/2022/rippled-1.9.3.html)
 
 ## Update process
 
