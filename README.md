@@ -80,7 +80,7 @@ If you started the container manually, you may have to change the name of the co
 
 ## Connecting
 
-You can now connect to the `rippled` websocket using a client like [ripple-lib](https://github.com/ripple/ripple-lib/tree/master).
+You can now connect to the `rippled` websocket using a client like [xrpl.js](https://github.com/XRPLF/xrpl.js/tree/main).
 
 # Updating
 
