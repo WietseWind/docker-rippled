@@ -58,6 +58,8 @@ You can change the `--name` and **make sure you specify a valid local full path 
 
 You can fetch a working sample config from the [Github repo](https://github.com/WietseWind/docker-rippled).
 
+To start the container in standalone mode, you can specify the environment variable `STANDALONE_MODE` with `-e STANDALONE_MODE=True` or add `-a --start` as args.
+
 ## So it's running
 
 If you want to check the rippled-logs (container stdout, press CTRL - C to stop watching):
