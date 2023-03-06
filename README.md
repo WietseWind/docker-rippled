@@ -58,6 +58,22 @@ You can change the `--name` and **make sure you specify a valid local full path 
 
 You can fetch a working sample config from the [Github repo](https://github.com/WietseWind/docker-rippled).
 
+### Passing arguments/environment variables
+
+Both environment variables passed with `-e` to `docker run` and arguments added at the end of the `docker run` command will be passed. E.g.:
+
+```bash
+docker run \
+  -e TESTVAR=123123 \
+  -it --name xrpld -p $PORT:80 \
+  -v $(pwd)/../config:/config/ \
+  xrpllabsofficial/xrpld:latest \
+  -aaa=bbb \
+  -c=ddd
+```
+
+... will pass the environment variable `TESTVAR` with value, and the arguments `-aaa` and `-c` to `rippled`.
+
 ## So it's running
 
 If you want to check the rippled-logs (container stdout, press CTRL - C to stop watching):
