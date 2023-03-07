@@ -68,11 +68,21 @@ docker run \
   -it --name xrpld -p $PORT:80 \
   -v $(pwd)/../config:/config/ \
   xrpllabsofficial/xrpld:latest \
-  -aaa=bbb \
-  -c=ddd
+  -a \
+  -start
 ```
 
 ... will pass the environment variable `TESTVAR` with value, and the arguments `-aaa` and `-c` to `rippled`.
+
+Alternatively, if you can't pass direct arguments, you can pass a string of arguments as an environment variable called `ENV_VARS`, like this:
+
+```bash
+docker run \
+  -e ENV_VARS=-a --start \
+  -it --name xrpld -p $PORT:80 \
+  -v $(pwd)/../config:/config/ \
+  xrpllabsofficial/xrpld:latest
+```
 
 ## So it's running
 
