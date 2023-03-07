@@ -3,6 +3,9 @@
 echo "Args:"
 echo "    >> [$@]"
 echo ""
+echo "Env Args:"
+echo "    >> [$ENV_ARGS]"
+echo ""
 echo "Env:"
 printenv
 echo ""
@@ -22,4 +25,4 @@ if [[ "$rippledconfig" -gt "0" && "$validatorstxt" -gt "0" ]]; then
 fi
 
 # Start rippled, Passthrough other arguments
-exec /opt/ripple/bin/rippled --conf /etc/opt/ripple/rippled.cfg "$@"
+exec /opt/ripple/bin/rippled --conf /etc/opt/ripple/rippled.cfg $@$ENV_ARGS
