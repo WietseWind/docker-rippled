@@ -24,10 +24,5 @@ if [[ "$rippledconfig" -gt "0" && "$validatorstxt" -gt "0" ]]; then
 
 fi
 
-ENV_ARGS = ""
-if [[ ! -z "${STANDALONE_MODE}" ]]; then
-  ENV_ARGS="${ENV_ARGS} -a --start"
-fi
-
 # Start rippled, Passthrough other arguments
 exec /opt/ripple/bin/rippled --conf /etc/opt/ripple/rippled.cfg $@$ENV_ARGS
