@@ -65,21 +65,21 @@ Both environment variables passed with `-e` to `docker run` and arguments added 
 ```bash
 docker run \
   -e TESTVAR=123123 \
-  -it --name xrpld -p $PORT:80 \
+  -it --name rippled -p $PORT:80 \
   -v $(pwd)/../config:/config/ \
   xrpllabsofficial/xrpld:latest \
   -a \
-  -start
+  --start
 ```
 
 ... will pass the environment variable `TESTVAR` with value, and the arguments `-aaa` and `-c` to `rippled`.
 
-Alternatively, if you can't pass direct arguments, you can pass a string of arguments as an environment variable called `ENV_VARS`, like this:
+Alternatively, if you can't pass direct arguments, you can pass a string of arguments as an environment variable called `ENV_ARGS`, like this:
 
 ```bash
 docker run \
-  -e ENV_VARS=-a --start \
-  -it --name xrpld -p $PORT:80 \
+  -e ENV_ARGS="-a --start" \
+  -it --name rippled -p $PORT:80 \
   -v $(pwd)/../config:/config/ \
   xrpllabsofficial/xrpld:latest
 ```
