@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "Args:"
+echo "    >> [$@]"
+echo ""
+echo "Env Args:"
+echo "    >> [$ENV_ARGS]"
+echo ""
+echo "Env:"
+printenv
+echo ""
+
 rippledconfig=`/bin/cat /config/rippled.cfg 2>/dev/null | wc -l`
 validatorstxt=`/bin/cat /config/validators.txt 2>/dev/null | wc -l`
 
@@ -20,4 +30,4 @@ if [[ ! -z "${STANDALONE_MODE}" ]]; then
 fi
 
 # Start rippled, Passthrough other arguments
-exec /opt/ripple/bin/rippled --conf /etc/opt/ripple/rippled.cfg $ENV_ARGS "$@"
+exec /opt/ripple/bin/rippled --conf /etc/opt/ripple/rippled.cfg $@$ENV_ARGS
