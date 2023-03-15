@@ -135,6 +135,7 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 - **2022** rippled 1.9.2 [is released](https://xrpl.org/blog/2022/rippled-1.9.2.html)
 - **2022** rippled 1.9.3 [is released](https://xrpl.org/blog/2022/rippled-1.9.3.html)
 - **2022** rippled 1.9.4 [is released](https://xrpl.org/blog/2022/rippled-1.9.4.html)
+- **2023-03-14** rippled 1.10.0 [is released](https://xrpl.org/blog/2023/rippled-1.10.0.html)
 
 ## Update process
 
