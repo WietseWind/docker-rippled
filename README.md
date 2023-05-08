@@ -58,6 +58,10 @@ You can change the `--name` and **make sure you specify a valid local full path 
 
 You can fetch a working sample config from the [Github repo](https://github.com/WietseWind/docker-rippled).
 
+### Note on Apple M1 / M2 chips:
+
+Run the container with `--platform linux/amd64` to get it to work on your Mac M1 / M2.
+
 ### Passing arguments/environment variables
 
 Both environment variables passed with `-e` to `docker run` and arguments added at the end of the `docker run` command will be passed. E.g.:
