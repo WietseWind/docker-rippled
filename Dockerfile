@@ -11,7 +11,7 @@ RUN apt-get update -y && \
     mkdir -p /usr/local/share/keyrings/ && \
     wget -q -O - "https://repos.ripple.com/repos/api/gpg/key/public" | gpg --dearmor > ripple-key.gpg && \
     mv ripple-key.gpg /usr/local/share/keyrings && \
-    echo "deb [signed-by=/usr/local/share/keyrings/ripple-key.gpg] https://repos.ripple.com/repos/rippled-deb focal stable" | tee -a /etc/apt/sources.list.d/ripple.list && \
+    echo "deb [signed-by=/usr/local/share/keyrings/ripple-key.gpg] https://repos.ripple.com/repos/rippled-deb jammy stable" | tee -a /etc/apt/sources.list.d/ripple.list && \
     apt-get update -y && \
     apt-get install rippled -y && \
     rm -rf /var/lib/apt/lists/* && \
