@@ -157,8 +157,8 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 ## Building & publishing to Docker Hub:
 
 ```
-version=1.11.0 # Sample
-docker build --no-cache --tag xrpllabsofficial/xrpld:$version .
+version=2.0.0 # Sample
+docker build --platform linux/amd64 --no-cache --tag xrpllabsofficial/xrpld:$version .
 docker push xrpllabsofficial/xrpld:$version
 docker tag xrpllabsofficial/xrpld:$version xrpllabsofficial/xrpld:latest
 docker push xrpllabsofficial/xrpld:latest
