@@ -99,7 +99,7 @@ docker logs -f rippled
 If you want to check the rippled server status:
 
 ```
-docker exec rippled server_info
+docker exec rippled rippled server_info
 ```
 
 Check the value of `complete_ledgers` in the server info to see if the server
