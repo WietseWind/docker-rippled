@@ -14,6 +14,6 @@ if [[ $(docker images -a|grep xrpllabsofficial/xrpld:latest|wc -l) -gt "0" ]]; t
 fi
 
 echo "Building image"
-docker build --no-cache --tag xrpllabsofficial/xrpld:latest $(self)/../.
+docker build --platform linux/amd64 --no-cache --tag xrpllabsofficial/xrpld:latest $(self)/../.
 
 echo "Done, you can now run $(self)/up"

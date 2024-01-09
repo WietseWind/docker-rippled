@@ -19,6 +19,7 @@ docker run \
     -dit \
     --name xrpld \
     -p $PORT:80 \
+    --platform linux/amd64 \
     -v $(self)/../config:/config/ \
     xrpllabsofficial/xrpld:latest
 
