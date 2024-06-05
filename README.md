@@ -146,6 +146,7 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 - **2024-01-09** rippled 2.0.0 [is released](https://xrpl.org/blog/2024/rippled-2.0.0.html)
 - **2024-01-29** rippled 2.0.1 [is released](https://github.com/XRPLF/rippled/releases/tag/2.0.1)
 - **2024-02-20** rippled 2.1.0 [is released](https://xrpl.org/blog/2024/rippled-2.1.0.html)
+- **2024-03-27** rippled 2.1.1 [is released](https://xrpl.org/blog/2024/rippled-2.1.1)
 - **2024-06-05** rippled 2.2.0 [is released](https://xrpl.org/blog/2024/rippled-2.2.0)
 
 ## Update process
@@ -160,7 +161,7 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 ## Building & publishing to Docker Hub:
 
 ```
-version=2.0.0 # Sample
+version=2.2.0 # Sample
 docker build --platform linux/amd64 --no-cache --tag xrpllabsofficial/xrpld:$version .
 docker push xrpllabsofficial/xrpld:$version
 docker tag xrpllabsofficial/xrpld:$version xrpllabsofficial/xrpld:latest
