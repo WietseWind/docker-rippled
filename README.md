@@ -148,6 +148,7 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 - **2024-02-20** rippled 2.1.0 [is released](https://xrpl.org/blog/2024/rippled-2.1.0.html)
 - **2024-03-27** rippled 2.1.1 [is released](https://xrpl.org/blog/2024/rippled-2.1.1)
 - **2024-06-05** rippled 2.2.0 [is released](https://xrpl.org/blog/2024/rippled-2.2.0)
+- **2024-07-31** rippled 2.2.1 [is released](https://xrpl.org/blog/2024/rippled-2.2.1)
 
 ## Update process
 
