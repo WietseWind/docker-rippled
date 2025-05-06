@@ -130,8 +130,9 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 - **2019-07-26** rippled 1.4.0 [is released](https://xrpl.org/blog/2019/rippled-1.4.0.html)
 - **2020-04-01** rippled 1.5.0 [is released](https://xrpl.org/blog/2020/rippled-1.5.0.html)
 - **2020-08-19** rippled 1.6.0 [is released](https://xrpl.org/blog/2020/rippled-1.6.0.html)
-- **2021-05-24** rippled 1.7.2 is released
-- **2021-08-28** rippled 1.7.3 is released
+- **2021-02-24** rippled 1.7.0 [is released](https://xrpl.org/blog/2021/rippled-1.7.0.html)
+- **2021-05-24** rippled 1.7.2 [is released](https://xrpl.org/blog/2021/rippled-1.7.2.html)
+- **2021-08-28** rippled 1.7.3 [is released](https://xrpl.org/blog/2021/rippled-1.7.3.html)
 - **2021-12-02** rippled 1.8.1 [is released](https://xrpl.org/blog/2021/rippled-1.8.1.html)
 - **2022-01-14** rippled 1.8.4 [is released](https://xrpl.org/blog/2022/rippled-1.8.4.html)
 - **2022-02-08** rippled 1.8.5 [is released](https://xrpl.org/blog/2022/rippled-1.8.5.html)
@@ -152,7 +153,6 @@ You can now connect to the `rippled` websocket using a client like [xrpl.js](htt
 - **2024-09-03** rippled 2.2.2 [is released](https://xrpl.org/blog/2024/rippled-2.2.2)
 - **2024-09-18** rippled 2.2.3 [is released](https://xrpl.org/blog/2024/rippled-2.2.3)
 - **2024-11-26** rippled 2.3.0 [is released](https://xrpl.org/blog/2024/rippled-2.3.0)
-- **2025-01-30** rippled 2.3.1 [is released](https://github.com/XRPLF/rippled/releases/tag/2.3.1)
 - **2025-01-30** rippled 2.3.1 [is released](https://github.com/XRPLF/rippled/releases/tag/2.3.1)
 - **2025-03-07** rippled 2.4.0 [is released](https://xrpl.org/blog/2025/rippled-2.4.0)
 
